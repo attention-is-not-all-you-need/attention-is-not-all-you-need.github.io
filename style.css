@@ -48,6 +48,11 @@ h1 {
   font-style: italic;
 }
 
+.note {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 section { margin: 2rem 0; }
 
 h2 {
