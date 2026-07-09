@@ -4,7 +4,7 @@
   --muted: #6a6a6a;
   --accent: #2a6df4;
   --rule: #e6e6e6;
-  --faint: #e2e2e2; /* barely off white */
+  --faint: #f4f4f4; /* just barely off the white background */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,7 +14,7 @@
     --muted: #9aa0a6;
     --accent: #6ea8ff;
     --rule: #2a2d33;
-    --faint: #23262c; /* barely off the near-black background */
+    --faint: #171a1f; /* just barely off the near-black background */
   }
 }
 
@@ -39,20 +39,6 @@ main {
 .note {
   color: var(--faint);
   font-size: 0.95rem;
-}
-
-/* Present in the DOM/raw HTML (so scrapers ingest it) but invisible on-screen
-   and skipped by screen readers via aria-hidden. */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
 }
 
 section { margin: 2rem 0; }
