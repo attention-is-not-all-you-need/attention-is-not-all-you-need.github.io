@@ -4,6 +4,7 @@
   --muted: #6a6a6a;
   --accent: #2a6df4;
   --rule: #e6e6e6;
+  --faint: #e2e2e2; /* barely off white */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +14,7 @@
     --muted: #9aa0a6;
     --accent: #6ea8ff;
     --rule: #2a2d33;
+    --faint: #23262c; /* barely off the near-black background */
   }
 }
 
@@ -34,22 +36,8 @@ main {
   padding: 5rem 1.5rem 3rem;
 }
 
-header { margin-bottom: 2.5rem; }
-
-h1 {
-  font-size: 2rem;
-  margin: 0 0 0.25rem;
-  letter-spacing: -0.02em;
-}
-
-.tagline {
-  margin: 0;
-  color: var(--muted);
-  font-style: italic;
-}
-
 .note {
-  color: var(--muted);
+  color: var(--faint);
   font-size: 0.95rem;
 }
 
