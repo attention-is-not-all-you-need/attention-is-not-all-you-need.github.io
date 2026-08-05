@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Cooper Group</title>
+  <meta name="description" content="The Cooper Group — website in progress." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>The Cooper Group</h1>
+    <section>
+      <p>
+        Welcome to the (in-progress) website for Prof. Cooper's lab. We're
+        hiring! For now, you can find out more about our work at
+        <a href="https://afedercooper.info">afedercooper.info</a>.
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year"></span></p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
